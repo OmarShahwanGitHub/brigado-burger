@@ -99,10 +99,14 @@ header {
 /* Hero Section */
 .hero {
     background: var(--secondary-color);
+    background-image: url('images/burger1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
     padding: 80px 20px 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     min-height: auto;
     position: relative;
     overflow: hidden;
@@ -126,6 +130,9 @@ header {
     position: relative;
     z-index: 1;
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .hero-title {
@@ -147,10 +154,11 @@ header {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px;
 }
 
 .hero-logo {
@@ -210,6 +218,27 @@ section {
 /* About Section */
 .about {
     background: var(--light-bg);
+    background-image: url('images/burger2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 245, 245, 0.92);
+    z-index: 0;
+}
+
+.about .container {
+    position: relative;
+    z-index: 1;
 }
 
 .about-content {
@@ -459,6 +488,19 @@ footer {
         padding: 40px 20px 40px;
         margin-top: 70px;
         min-height: auto;
+        justify-content: center;
+    }
+
+    .hero-content {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        margin-top: 20px;
     }
 
     .hero-title {
