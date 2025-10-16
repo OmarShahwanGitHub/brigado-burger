@@ -52,9 +52,21 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo-image {
     height: 60px;
     width: auto;
+}
+
+.logo-text {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .logo h1 {
@@ -140,7 +152,7 @@ header {
 }
 
 .hero-logo {
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     height: auto;
     animation: float 3s ease-in-out infinite;
@@ -456,11 +468,15 @@ footer {
     }
 
     .hero-logo {
-        max-width: 350px;
+        max-width: 400px;
     }
 
     .logo-image {
         height: 50px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
     }
 
     .section-title {
