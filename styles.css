@@ -52,22 +52,16 @@ header {
     align-items: center;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
 .logo h1 {
     color: var(--text-light);
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 1px;
-}
-
-.halal-badge {
-    background: var(--accent-green);
-    color: var(--text-light);
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 12px;
-    display: inline-block;
-    margin-top: 4px;
-    font-weight: 600;
 }
 
 .nav-links {
@@ -145,8 +139,10 @@ header {
     align-items: center;
 }
 
-.burger-placeholder {
-    font-size: 15rem;
+.hero-logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -459,8 +455,12 @@ footer {
         font-size: 1.1rem;
     }
 
-    .burger-placeholder {
-        font-size: 8rem;
+    .hero-logo {
+        max-width: 250px;
+    }
+
+    .logo-image {
+        height: 40px;
     }
 
     .section-title {
