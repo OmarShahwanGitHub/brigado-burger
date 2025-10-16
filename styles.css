@@ -445,7 +445,8 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 120px 20px 60px;
+        padding: 100px 20px 60px;
+        min-height: 100vh;
     }
 
     .hero-title {
