@@ -27,9 +27,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 40px;
 }
 
 /* Header & Navigation */
@@ -50,7 +50,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
 }
 
 .logo {
@@ -98,12 +97,10 @@ header {
 
 /* Hero Section */
 .hero {
-    background: var(--secondary-color);
     background-image: url('images/burger1.jpg');
     background-size: cover;
     background-position: center;
-    background-blend-mode: multiply;
-    padding: 80px 20px 60px;
+    padding: 80px 40px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,10 +159,9 @@ header {
 }
 
 .hero-logo {
-    max-width: 900px;
+    max-width: 500px;
     width: 100%;
     height: auto;
-    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -217,11 +213,9 @@ section {
 
 /* About Section */
 .about {
-    background: var(--light-bg);
     background-image: url('images/burger2.jpg');
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay;
     position: relative;
 }
 
@@ -232,7 +226,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(245, 245, 245, 0.92);
+    background: rgba(255, 255, 255, 0.9);
     z-index: 0;
 }
 
@@ -512,7 +506,11 @@ footer {
     }
 
     .hero-logo {
-        max-width: 500px;
+        max-width: 350px;
+    }
+
+    .container {
+        padding: 0 20px;
     }
 
     .logo-image {
