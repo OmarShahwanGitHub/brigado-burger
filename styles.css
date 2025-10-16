@@ -91,13 +91,14 @@ header {
 /* Hero Section */
 .hero {
     background: var(--secondary-color);
-    padding: 120px 20px 80px;
+    padding: 100px 20px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 600px;
+    min-height: calc(100vh - 80px);
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .hero::before {
@@ -445,7 +446,9 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 90px 20px 60px;
+        padding: 40px 20px 60px;
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
     }
 
     .hero-title {
