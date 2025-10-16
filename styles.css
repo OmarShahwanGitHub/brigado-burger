@@ -152,7 +152,7 @@ header {
 }
 
 .hero-logo {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     height: auto;
     animation: float 3s ease-in-out infinite;
@@ -468,7 +468,7 @@ footer {
     }
 
     .hero-logo {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .logo-image {
