@@ -99,14 +99,14 @@ header {
 .hero {
     background-image: url('images/burger1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 60%;
     padding: 80px 40px 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     min-height: auto;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin-top: 80px;
 }
 
@@ -151,15 +151,14 @@ header {
 }
 
 .hero-image {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 2;
 }
 
 .hero-logo {
-    max-width: 500px;
+    max-width: 350px;
     width: 100%;
     height: auto;
 }
@@ -201,6 +200,13 @@ section {
     position: relative;
 }
 
+.menu .section-title {
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
 .section-title::after {
     content: '';
     display: block;
@@ -213,21 +219,7 @@ section {
 
 /* About Section */
 .about {
-    background-image: url('images/burger2.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 0;
+    background: var(--light-bg);
 }
 
 .about .container {
@@ -285,7 +277,15 @@ section {
 
 /* Menu Section */
 .menu {
-    background: white;
+    background-image: url('images/burger2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.menu .container {
+    position: relative;
+    z-index: 1;
 }
 
 .menu-items {
@@ -297,7 +297,7 @@ section {
 }
 
 .menu-item {
-    background: var(--light-bg);
+    background: rgba(245, 245, 245, 0.95);
     padding: 2rem;
     border-radius: 15px;
     border-left: 5px solid var(--primary-color);
@@ -491,9 +491,10 @@ footer {
     }
 
     .hero-image {
+        position: static;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 0;
         margin-top: 20px;
     }
 
